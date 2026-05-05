@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CourtTrack AI: NyayaLens — From Judgment to Action</title>
+  <meta name="description" content="CourtTrack AI converts complex court judgment PDFs into structured, verified, and actionable outputs. Never miss a court directive again." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <div class="masthead">
+        <h1 class="masthead-title font-serif">CourtTrack AI</h1>
+        <p class="masthead-subtitle font-sans">NyayaLens — Structured Intelligence for Court Compliance</p>
+      </div>
+      <div class="edition-bar">
+        <span>Vol. 1 | Edition 1.0</span>
+        <span>Est. 2025 — Government of India Initiative</span>
+        <span id="edition-date"></span>
+      </div>
+      <div style="display:flex;justify-content:space-between;align-items:center;">
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Open navigation menu" aria-expanded="false">&#9776;</button>
+        <nav id="main-nav" class="nav-bar" role="navigation" aria-label="Main navigation">
+          <a href="#problem">The Problem</a>
+          <a href="#solution">How It Works</a>
+          <a href="#features">Features</a>
+          <a href="#difference">Why Us</a>
+          <a href="#vision">Vision</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero newsprint-texture" id="hero" aria-label="Hero section">
+    <div class="hero-content">
+      <p class="hero-label font-mono">Introducing NyayaLens</p>
+      <h2 class="hero-headline font-serif">
+        No Court Order<br/>Should Be <span class="accent">Buried</span><br/>In a PDF.
+      </h2>
+      <p class="hero-subhead drop-cap">
+        Every year, government departments receive thousands of court judgment PDFs — dense, complex, and buried in legal language. Critical directives get lost. Deadlines are missed. Contempt risks rise. CourtTrack AI transforms these judgments into clear, trackable, actionable intelligence.
+      </p>
+      <div class="hero-cta-group">
+        <a href="#solution" class="btn-primary">See How It Works</a>
+        <a href="#features" class="btn-secondary">Explore Features</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="court-gavel.png" alt="Judge's gavel resting on legal documents — representing the weight of court judgments" loading="eager" />
+    </div>
+  </section>
+
+  <!-- ===== TICKER ===== -->
+  <div class="ticker-bar" role="marquee" aria-label="Key statistics">
+    <div class="ticker-track">
+      <span class="ticker-item"><span class="ticker-badge">Critical</span> 40+ Pages per Judgment — Manual Review</span>
+      <span class="ticker-item">Missed Deadlines lead to Contempt Risk</span>
+      <span class="ticker-item"><span class="ticker-badge">Alert</span> No Structured Extraction System Exists</span>
+      <span class="ticker-item">Poor Cross-Department Coordination</span>
+      <span class="ticker-item"><span class="ticker-badge">NyayaLens</span> AI-Powered Extraction + Human Verification</span>
+      <span class="ticker-item">Bilingual: English + Kannada + Hindi</span>
+      <span class="ticker-item"><span class="ticker-badge">Critical</span> 40+ Pages per Judgment — Manual Review</span>
+      <span class="ticker-item">Missed Deadlines lead to Contempt Risk</span>
+      <span class="ticker-item"><span class="ticker-badge">Alert</span> No Structured Extraction System Exists</span>
+      <span class="ticker-item">Poor Cross-Department Coordination</span>
+      <span class="ticker-item"><span class="ticker-badge">NyayaLens</span> AI-Powered Extraction + Human Verification</span>
+      <span class="ticker-item">Bilingual: English + Kannada + Hindi</span>
+    </div>
+  </div>
+
+  <!-- ===== LADY JUSTICE BANNER ===== -->
+  <section class="justice-banner" aria-label="Lady Justice editorial banner">
+    <div class="justice-banner-content">
+      <p class="justice-banner-eyebrow">The Blindfolded Guardian</p>
+      <h2 class="font-serif">Justice Must Not Be<br/>Blind to Compliance</h2>
+      <hr class="justice-banner-rule" />
+      <p>She holds the scales and the sword — balance and authority. Yet when court orders are buried in PDFs, even justice cannot see what action is needed. NyayaLens gives sight to the system.</p>
+    </div>
+  </section>
+
+  <!-- ===== PROBLEM ===== -->
+  <section class="problem-section container" id="problem" aria-label="The Problem">
+    <div class="reveal">
+      <p class="section-label font-mono">&#167; The Crisis</p>
+      <h2 class="section-title font-serif">The Problem Is Not<br/>Access — It's <span style="color:var(--accent)">Interpretation</span></h2>
+    </div>
+    <div class="problem-grid reveal">
+      <div class="problem-left">
+        <p class="drop-cap text-justify" style="font-size:0.95rem;color:var(--n600);line-height:1.8;">
+          Government departments already receive court judgments through systems like CCMS. The documents are accessible. But each judgment is 20–40 pages of dense legal prose. Officers must manually read every page, interpret complex phrasing, and sometimes calculate deadlines like "within 8 weeks from the date of pronouncement." This is where the system breaks down — not at access, but at comprehension and action.
+        </p>
+        <div class="ornament">&#10023; &#10023; &#10023;</div>
+        <p style="font-family:'Inter',sans-serif;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.15em;color:var(--n500);">
+          Fig. 1.1 — The four cascading failure modes of manual judgment processing
+        </p>
+      </div>
+      <div class="problem-right">
+        <div class="problem-card">
+          <div class="problem-card-num font-serif">01</div>
+          <h4 class="font-serif">Missed Deadlines</h4>
+          <p class="font-body">Critical compliance dates buried in legal text go unnoticed until it's too late, leading to institutional failure.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-card-num font-serif">02</div>
+          <h4 class="font-serif">No Accountability</h4>
+          <p class="font-body">Without structured assignment, no single department or officer owns the action — responsibility dissolves.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-card-num font-serif">03</div>
+          <h4 class="font-serif">Poor Coordination</h4>
+          <p class="font-body">Multi-department directives require synchronized action, but no system connects the dots between departments.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-card-num font-serif">04</div>
+          <h4 class="font-serif">Contempt Risk</h4>
+          <p class="font-body">The ultimate consequence: courts issue contempt proceedings when government fails to comply with their own orders.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COURTROOM IMAGE BREAK ===== -->
+  <section class="image-break" aria-label="Courtroom interior">
+    <img src="court-hall.png" alt="Grand courtroom interior with ornate wooden judge's bench and tall columns" loading="lazy" />
+    <div class="image-break-overlay">
+      <p class="font-mono">Fig. 2.1 — The gravity of court orders demands structured compliance systems</p>
+    </div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section class="pipeline-section newsprint-texture" id="solution" aria-label="How it works">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-label font-mono">&#167; The Solution Pipeline</p>
+        <h2 class="section-title font-serif">From Judgment Received<br/>to Action Defined</h2>
+      </div>
+      <div class="pipeline-flow reveal">
+        <div class="pipeline-step">
+          <p class="step-num font-mono">Step 01</p>
+          <div class="step-icon font-serif">I</div>
+          <h3 class="step-title">PDF Intake</h3>
+          <p class="step-desc">Judgment PDFs are ingested from CCMS or uploaded directly. OCR handles scanned documents.</p>
+          <span class="step-arrow" aria-hidden="true">&rarr;</span>
+        </div>
+        <div class="pipeline-step">
+          <p class="step-num font-mono">Step 02</p>
+          <div class="step-icon font-serif">II</div>
+          <h3 class="step-title">AI Extraction</h3>
+          <p class="step-desc">NLP models extract actions, deadlines, departments, and obligations from dense legal text.</p>
+          <span class="step-arrow" aria-hidden="true">&rarr;</span>
+        </div>
+        <div class="pipeline-step">
+          <p class="step-num font-mono">Step 03</p>
+          <div class="step-icon font-serif">III</div>
+          <h3 class="step-title">Confidence Scoring</h3>
+          <p class="step-desc">Each extracted item is assigned a confidence score. Low-confidence items are flagged for review.</p>
+          <span class="step-arrow" aria-hidden="true">&rarr;</span>
+        </div>
+        <div class="pipeline-step">
+          <p class="step-num font-mono">Step 04</p>
+          <div class="step-icon font-serif">IV</div>
+          <h3 class="step-title">Human Verification</h3>
+          <p class="step-desc">Officers verify AI outputs before they become official. The human is always in the loop.</p>
+          <span class="step-arrow" aria-hidden="true">&rarr;</span>
+        </div>
+        <div class="pipeline-step">
+          <p class="step-num font-mono">Step 05</p>
+          <div class="step-icon font-serif">V</div>
+          <h3 class="step-title">Action Dashboard</h3>
+          <p class="step-desc">Verified actions appear on a live dashboard with deadlines, owners, and compliance status.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURES ===== -->
+  <section class="features-section container" id="features" aria-label="Key features">
+    <div class="reveal">
+      <p class="section-label font-mono">&#167; Key Features</p>
+      <h2 class="section-title font-serif">Designed for Real<br/>Government <span style="color:var(--accent)">Workflows</span></h2>
+    </div>
+    <div class="features-grid reveal">
+      <div class="feature-card">
+        <span class="feature-badge">Critical</span>
+        <div class="feature-icon font-serif">CR</div>
+        <h3 class="font-serif">Contempt Risk Indicator</h3>
+        <p class="font-body">Visual risk levels based on deadline proximity. Red, amber, green indicators help officers prioritize the most urgent compliance actions first.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon font-serif">EL</div>
+        <h3 class="font-serif">Evidence-Linked Extraction</h3>
+        <p class="font-body">Every extracted directive links back to the exact sentence in the PDF. Officers verify instantly without re-reading 40 pages of dense legal text.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon font-serif">DS</div>
+        <h3 class="font-serif">Decision Summary Cards</h3>
+        <p class="font-body">Judgments broken into clean, scannable cards showing action, responsible department, deadline, and current compliance status at a glance.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon font-serif">BL</div>
+        <h3 class="font-serif">Bilingual Support</h3>
+        <p class="font-body">Full support for English and Kannada, making the system usable at the district level. Hindi support planned for national-scale adoption across states.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon font-serif">VE</div>
+        <h3 class="font-serif">Voice-Based Explanation</h3>
+        <p class="font-body">Officers can listen to a short audio explanation of the judgment in simple language — enabling quick understanding without reading the full document.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-badge">New</span>
+        <div class="feature-icon font-serif">TL</div>
+        <h3 class="font-serif">Timeline View</h3>
+        <p class="font-body">A visual flow from judgment to action to deadline. Track progress, see the current state, and identify bottlenecks in the compliance pipeline.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COMPLIANCE DESK IMAGE BREAK ===== -->
+  <section class="image-break" aria-label="Compliance desk">
+    <img src="compliance-desk.png" alt="Government officer's desk with court judgment documents, calendar with marked deadlines, and compliance dashboard" loading="lazy" />
+    <div class="image-break-overlay">
+      <p class="font-mono">Fig. 3.1 — From documents to dashboards — the transformation NyayaLens enables</p>
+    </div>
+  </section>
+
+  <div class="ornament">&#10023; &#10023; &#10023;</div>
+
+  <!-- ===== DIFFERENTIATOR ===== -->
+  <section class="diff-section container" id="difference" aria-label="What makes this different">
+    <div class="reveal">
+      <p class="section-label font-mono">&#167; The Distinction</p>
+      <h2 class="section-title font-serif">Not Summarization —<br/><span style="color:var(--accent)">Structured</span> Extraction</h2>
+    </div>
+    <div class="diff-grid reveal">
+      <div class="diff-main">
+        <p class="drop-cap text-justify" style="font-size:0.95rem;color:var(--n600);line-height:1.8;margin-bottom:24px;">
+          Most existing approaches focus on summarizing documents. That still leaves the officer with interpretation work. Our approach is fundamentally different — we focus on structured extraction, verification, and tracking. NyayaLens is designed as a system that fits into real workflows, not just a tool that generates text.
+        </p>
+        <ul class="diff-list">
+          <li><span class="diff-check">&check;</span> <span>Every output is <strong>verifiable</strong> — linked to the exact source text in the judgment PDF</span></li>
+          <li><span class="diff-check">&check;</span> <span>Every decision is <strong>traceable</strong> — full audit trail from extraction to verification to action</span></li>
+          <li><span class="diff-check">&check;</span> <span><strong>Human review</strong> is always part of the loop — AI assists, humans decide</span></li>
+          <li><span class="diff-check">&check;</span> <span>Integrates with <strong>existing systems</strong> like CCMS without requiring major infrastructure changes</span></li>
+          <li><span class="diff-check">&check;</span> <span>Scalable from <strong>state-level to national-level</strong> through eCourts integration</span></li>
+        </ul>
+      </div>
+      <div class="diff-sidebar">
+        <h3 class="font-serif">Impact at Scale</h3>
+        <div class="stat-block">
+          <div class="stat-num font-serif" style="color:var(--accent);">80%</div>
+          <div class="stat-label font-sans">Reduction in Manual Review Time</div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-num font-serif">100%</div>
+          <div class="stat-label font-sans">Actions Traceable &amp; Verifiable</div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-num font-serif" style="color:var(--accent);">0</div>
+          <div class="stat-label font-sans">Missed Directives — The Goal</div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-num font-serif">2</div>
+          <div class="stat-label font-sans">Languages Supported (Extensible)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VISION ===== -->
+  <section class="vision-section" id="vision" aria-label="Vision">
+    <div class="reveal container">
+      <p class="section-label font-mono" style="color:var(--n400);">&#167; The Vision</p>
+      <h2 class="section-title font-serif" style="color:#F9F9F7;">The Long-Term Goal</h2>
+      <blockquote class="vision-quote font-serif">
+        "No important court order should be <span class="accent">missed</span> simply because it was <span class="accent">buried</span> inside a PDF."
+      </blockquote>
+      <p style="font-size:0.95rem;max-width:700px;margin:0 auto 32px;line-height:1.8;" class="text-justify font-body">
+        The long-term goal is to build a system where court directives are not just stored, but are clearly understood, assigned, tracked, and completed. From state-level pilot to national-scale deployment through eCourts integration — CourtTrack AI aims to become the compliance backbone of India's judicial-executive interface.
+      </p>
+      <a href="#hero" class="btn-primary">Back to Top</a>
+    </div>
+  </section>
+
+  <div class="ornament">&#10023; &#10023; &#10023;</div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3 class="font-serif">CourtTrack AI</h3>
+          <p class="font-body">NyayaLens — Structured intelligence for court compliance. Transforming judgment PDFs into clear, trackable, actionable directives for government departments.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Platform</h4>
+          <a href="#solution">How It Works</a>
+          <a href="#features">Key Features</a>
+          <a href="#difference">Why NyayaLens</a>
+          <a href="#vision">Vision</a>
+        </div>
+        <div class="footer-col">
+          <h4>Technology</h4>
+          <a href="#solution">AI Extraction</a>
+          <a href="#features">Confidence Scoring</a>
+          <a href="#features">Bilingual NLP</a>
+          <a href="#solution">CCMS Integration</a>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <a href="#problem">The Problem</a>
+          <a href="#difference">Impact Data</a>
+          <a href="#vision">Roadmap</a>
+          <a href="#hero">Back to Top</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2025 CourtTrack AI — NyayaLens. Government of India Initiative.</span>
+        <span>Edition: Vol 1.0 | Built with Purpose</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('edition-date').textContent = new Date().toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+  </script>
+
+</body>
+</html>
